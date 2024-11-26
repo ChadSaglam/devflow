@@ -49,6 +49,7 @@ const questions = [
   },
 ];
 
+/*
 const test = async () => {
   try {
     throw new ValidationError({
@@ -59,13 +60,13 @@ const test = async () => {
     return handleError(error);
   }
 };
-
+*/
 interface SearchParams {
   searchParams: Promise<{ [key: string]: string }>;
 }
 
 const Home = async ({ searchParams }: SearchParams) => {
-  await test();
+  //await test();
 
   const { query = "", filter = "" } = await searchParams;
 
